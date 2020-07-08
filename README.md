@@ -85,14 +85,35 @@ sudo perf script | ./stackcollapse-perf.pl | ./famegraph.pl > perf.svg
 
 
 <p align="left">
-   <img src="screen-shots/flame-fib.png" width ="800" height="300"/>  
+   <img src="screen-shots/flame-without-dll.png" width ="800" height="300"/>  
 
   <br/>
   Fig. 2 Generated flameGraph for Fibonacci number using recursion
 </p>
 
 
-### Section:2 Python script with perf
+
+### Section:2 C++ shared library profiling using perf
+
+Similarly, we can only profile C++ shared libraray using same way.
+
+```
+perf report -d library.so
+```
+
+### Generated flameGraph for shared library of C++ Fibonacci
+
+
+<p align="left">
+   <img src="screen-shots/flane-with-dll.png" width ="800" height="300"/>  
+
+  <br/>
+  Fig. 2 Generated flameGraph for C++ Fibonacci number shared library using recursion
+</p>
+
+
+
+### Section:3 Python script with perf
 
 In new separate terminal type:
 
@@ -122,8 +143,8 @@ will be saved in same root folder i.e. `FlameGraph`.
 
 
 <p align="left">
-   <img src="screen-shots/flame-graph1.png" width ="800" height="300"/>  
-   <img src="screen-shots/flame-graph1.png" width ="800" height="300"/>
+   <img src="screen-shots/" width ="800" height="300"/>  
+   <img src="screen-shots/" width ="800" height="300"/>
   <br/>
   Fig. 1. CPU FlameGraph for myscript.py. Fig. 2. CPU FlameGraph for myscript.py
 </p>
