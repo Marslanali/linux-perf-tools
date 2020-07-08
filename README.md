@@ -108,7 +108,7 @@ perf report -d library.so
    <img src="screen-shots/flane-with-dll.png" width ="800" height="300"/>  
 
   <br/>
-  Fig. 2 Generated flameGraph for C++ Fibonacci number shared library using recursion
+  Fig. 3 Generated flameGraph for C++ Fibonacci number shared library using recursion
 </p>
 
 
@@ -146,7 +146,7 @@ will be saved in same root folder i.e. `FlameGraph`.
    <img src="screen-shots/" width ="800" height="300"/>  
    <img src="screen-shots/" width ="800" height="300"/>
   <br/>
-  Fig. 1. CPU FlameGraph for myscript.py. Fig. 2. CPU FlameGraph for myscript.py
+  Fig. 4. CPU FlameGraph for myscript.py. Fig. 2. CPU FlameGraph for myscript.py
 </p>
 
 
