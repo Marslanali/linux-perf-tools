@@ -40,7 +40,7 @@ Computing for n > 40 takes considerable time.
 
 
 <p align="left">
-   <img src="screen-shots/fibonacci.png" width ="300" height="300"/>  
+   <img src="screen-shots/fibonacci.png" width ="600" height="150"/>  
 
   <br/>
   Fig. Pusedo code for Fibonacci number using recursion
@@ -87,7 +87,7 @@ sudo perf script | ./stackcollapse-perf.pl | ./famegraph.pl > perf.svg
 
 
 <p align="left">
-   <img src="screen-shots/flame-fib.png" width ="300" height="300"/>  
+   <img src="screen-shots/flame-fib.png" width ="600" height="300"/>  
 
   <br/>
   Fig. Generated flameGraph for Fibonacci number using recursion
@@ -130,8 +130,8 @@ will be saved in same root folder i.e. `FlameGraph`.
 
 
 <p align="left">
-   <img src="screen-shots/flame-graph1.png" width ="300" height="300"/>  
-   <img src="screen-shots/flame-graph1.png" width ="300" height="300"/>
+   <img src="screen-shots/flame-graph1.png" width ="600" height="300"/>  
+   <img src="screen-shots/flame-graph1.png" width ="600" height="300"/>
   <br/>
   Fig. 1. CPU FlameGraph for myscript.py. Fig. 2. CPU FlameGraph for myscript.py
 </p>
