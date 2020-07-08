@@ -40,7 +40,7 @@ Computing for n > 40 takes considerable time.
 
 
 <p align="left">
-   <img src="screen-shots/fibonacci.png" width ="600" height="150"/>  
+   <img src="screen-shots/fibonacci.png" width ="800" height="150"/>  
 
   <br/>
   Fig. Pusedo code for Fibonacci number using recursion
@@ -87,15 +87,11 @@ sudo perf script | ./stackcollapse-perf.pl | ./famegraph.pl > perf.svg
 
 
 <p align="left">
-   <img src="screen-shots/flame-fib.png" width ="600" height="300"/>  
+   <img src="screen-shots/flame-fib.png" width ="800" height="300"/>  
 
   <br/>
   Fig. Generated flameGraph for Fibonacci number using recursion
 </p>
-
-
-
-
 
 
 ### Installation
