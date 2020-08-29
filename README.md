@@ -18,7 +18,7 @@ linux-tools-4.15.0-88-generic
 linux-cloud-tools-4.15.0-88-generic
 ```
 
-## Optionally 
+### Optionally 
 
 You may also want to install one of the following packages to keep up to date:
 
@@ -27,7 +27,7 @@ linux-tools-generic
 Linux-cloud-tools-generic
 ```
 
-## Perf analysis on C++ Fibonacci Number (Naive Algorithm)
+### Perf analysis on C++ Fibonacci Number (Naive Algorithm)
 
 The first approach to test Fibonacci number is using recursion and this will be indeed slow for greater value of n. 
 
@@ -58,7 +58,7 @@ set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=gnu++11") 
 ```
 
-## Creating a Perf.data for C++ Fibonacci Number
+### Creating a Perf.data for C++ Fibonacci Number
 
 In a new terminal type:
 
@@ -66,7 +66,7 @@ In a new terminal type:
 sudo perf record --call-graph dwarf ./test-code-flame-graph
 ```
 
-## Generating flameGraph from perf.data
+### Generating flameGraph from perf.data
 
 In new separate terminal type:
 
@@ -74,7 +74,7 @@ In new separate terminal type:
 sudo perf script | ./stackcollapse-perf.pl | ./famegraph.pl > perf.svg
 ```
 
-## Generated flameGraph
+### Generated flameGraph
 
 
 <p align="left">
@@ -94,7 +94,7 @@ Similarly, we can only profile C++ shared libraray using same way.
 perf report -d library.so
 ```
 
-## Generated flameGraph for shared library of C++ Fibonacci
+### Generated flameGraph for shared library of C++ Fibonacci
 
 <p align="left">
    <img src="screen-shots/flane-with-dll.png" width ="800" height="300"/>  
