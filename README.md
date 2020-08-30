@@ -36,6 +36,7 @@ Computing for n > 40 takes considerable time.
 
 <p align='center'>
     <img src="./config/doc/fibonacci.png" alt="drawing" width="800"/>
+ <br/>
 Fig. 1 Pusedo code for Fibonacci number using recursion
 </p>
 
