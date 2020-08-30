@@ -5,7 +5,7 @@ Perf (Linux profiling with performance counter) is powerful: it can instrument C
 
 perf began as a tool for using the performance counters subsystem in Linux, and has had various enhancements to add tracing capabilities.
 
-## Section:1 C++ application using perf
+## Section1: C++ application using perf
 
 You may need to install `linux-tools-common` and other packages for the specific kernel:
 
@@ -33,12 +33,12 @@ The first approach to test Fibonacci number is using recursion and this will be 
 
 Computing for n > 40 takes considerable time. 
 
-<p align="left">
-   <img src="screen-shots/fibonacci.png" width ="800" height="150"/>  
 
-  <br/>
-  Fig. 1 Pusedo code for Fibonacci number using recursion
+<p align='center'>
+    <img src="./config/doc/fibonacci.png" alt="drawing" width="800"/>
+Fig. 1 Pusedo code for Fibonacci number using recursion
 </p>
+
 
 In a new terminal type:
 
@@ -78,7 +78,7 @@ sudo perf script | ./stackcollapse-perf.pl | ./famegraph.pl > perf.svg
 
 
 <p align="left">
-   <img src="screen-shots/flame-without-dll.png" width ="800" height="300"/>  
+   <img src="./config/doc/flame-without-dll.png" width ="800" height="300"/>  
 
   <br/>
   Fig. 2 Generated flameGraph for Fibonacci number using recursion
@@ -86,7 +86,7 @@ sudo perf script | ./stackcollapse-perf.pl | ./famegraph.pl > perf.svg
 
 
 
-## Section:2 C++ shared library profiling using perf
+## Section2: C++ shared library profiling using perf
 
 Similarly, we can only profile C++ shared libraray using same way.
 
@@ -97,13 +97,13 @@ perf report -d library.so
 ### Generated flameGraph for shared library of C++ Fibonacci
 
 <p align="left">
-   <img src="screen-shots/flane-with-dll.png" width ="800" height="300"/>  
+   <img src="./config/doc/flane-with-dll.png" width ="800" height="300"/>  
 
   <br/>
   Fig. 3 Generated flameGraph for C++ Fibonacci number shared library using recursion
 </p>
 
-## Section:3 Python script with perf
+## Section3: Python script with perf
 
 In new separate terminal type:
 
@@ -131,8 +131,8 @@ Where `flamegraph.pl` is located in root folder of `FlameGraph`, the generated f
 will be saved in same root folder i.e. `FlameGraph`.
 
 <p align="left">
-   <img src="screen-shots/" width ="800" height="300"/>  
-   <img src="screen-shots/" width ="800" height="300"/>
+   <img src="./config/doc/" width ="800" height="300"/>  
+   <img src="./config/doc/" width ="800" height="300"/>
   <br/>
   Fig. 4. CPU FlameGraph for myscript.py. Fig. 2. CPU FlameGraph for myscript.py
 </p>
