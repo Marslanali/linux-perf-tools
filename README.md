@@ -78,9 +78,8 @@ sudo perf script | ./stackcollapse-perf.pl | ./famegraph.pl > perf.svg
 
 
 <p align="left">
-   <img src="./config/doc/flame-without-dll.png" width ="800" height="300"/>  
-
-  <br/>
+   <img src="./config/doc/flame-without-dll.png" width ="800" height="300"/> 
+   <br/>
   Fig. 2 Generated flameGraph for Fibonacci number using recursion
 </p>
 
